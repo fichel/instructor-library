@@ -1,0 +1,12 @@
+[project]
+name = "instructor-library"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "instructor>=1.7.2",
+    "ipykernel>=6.29.5",
+    "openai>=1.60.1",
+    "python-dotenv>=1.0.1",
+]
