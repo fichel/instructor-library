@@ -28,11 +28,11 @@ source .venv/bin/activate  # On Unix/macOS
 OPENAI_API_KEY=your_key_here
 ```
 
-## Examples
+## Code
+### Tutorial
+- [Basics](tutorial/basics.py): Core concepts including data extraction, field validation, and nested models
+- [Beyond Basics](tutorial/beyond_basics.py): Advanced patterns like dynamic prompting and intent-based routing
 
-### Basic Usage
-- [basics.py](basics.py): Core concepts including data extraction, field validation, and nested models
-- [beyond_basics.py](beyond_basics.py): Advanced patterns like dynamic prompting and intent-based routing
 ### Application Examples
 - [Recursive Schemas](examples/01_recursive_schema.py): Handling nested comment trees
 - [Classification with Chain of Thought](examples/02_single_classification_with_cot.py): Spam detection with reasoning
@@ -53,4 +53,4 @@ OPENAI_API_KEY=your_key_here
 - Instructor ≥1.7.2
 
 ## License
-MIT
+[MIT](LICENSE)
