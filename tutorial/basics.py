@@ -67,7 +67,7 @@ class UserInfo3(BaseModel):
     @field_validator("age")
     @classmethod
     def validate_age(cls, value: int):
-        if not (0 < value > 18):
+        if not (0 < value < 18):
             raise ValueError("Age must be between 0 and 18")
         return value
 
@@ -76,7 +76,7 @@ class UserInfo3(BaseModel):
 user_info = client.chat.completions.create(
     model="gpt-4o-mini",
     response_model=UserInfo3,
-    messages=[{"role": "user", "content": "Hey, I'm John Doe. I'm 12 years old."}],
+    messages=[{"role": "user", "content": "Hey, I'm John Doe. I'm 22 years old."}],
     max_retries=0,
 )
 
@@ -98,7 +98,7 @@ class Address(BaseModel):
 
 class UserInfo4(BaseModel):
     name: str
-    age: int
+    age: Optional[int]
     address: Address
 
 
